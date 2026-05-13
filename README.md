@@ -76,22 +76,28 @@ npm run preview
 
 ## Deployment
 
-This project is configured for GitHub Pages using `HashRouter`.
+This project is configured for GitHub Pages using `HashRouter` and GitHub Actions.
 
-Deploy with:
+Every push to the `main` branch runs the deployment workflow:
 
-```bash
-npm run deploy
+```text
+.github/workflows/deploy.yml
 ```
 
-Then enable GitHub Pages in the repository settings:
+The workflow installs dependencies, builds the Vite app, uploads the `dist` folder, and publishes it to GitHub Pages.
+
+To verify the production build locally:
+
+```bash
+npm run build
+```
+
+Enable GitHub Pages in the repository settings:
 
 1. Go to **Settings**.
 2. Open **Pages**.
-3. Select **Deploy from a branch**.
-4. Choose the `gh-pages` branch.
-5. Select `/root` as the folder.
-6. Save.
+3. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+4. Save.
 
 ## Developer
 
