@@ -1,0 +1,45 @@
+.story {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 48px;
+}
+
+.story p {
+  margin: 0 0 18px;
+  color: var(--ink-soft);
+  font-size: 1.08rem;
+  line-height: 1.75;
+}
+
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 34px;
+}
+
+.timeline article {
+  min-height: 190px;
+  padding: 26px;
+  border-left: 4px solid var(--red);
+  border-radius: var(--radius);
+  background: var(--white);
+  box-shadow: 0 16px 34px rgba(7, 29, 58, 0.06);
+}
+
+.timeline strong {
+  color: var(--blue);
+  font-size: 1.8rem;
+}
+
+.timeline p {
+  color: var(--ink-soft);
+  line-height: 1.65;
+}
+
+@media (max-width: 860px) {
+  .story,
+  .timeline {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,90 @@
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 32px;
+}
+
+.filters button {
+  min-height: 42px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  color: var(--ink-soft);
+  font-weight: 800;
+  background: var(--white);
+  transition:
+    background 160ms ease,
+    border-color 160ms ease,
+    color 160ms ease,
+    transform 160ms ease;
+}
+
+.filters button:hover {
+  transform: translateY(-2px);
+}
+
+.filters .active {
+  color: var(--white);
+  border-color: var(--blue);
+  background: var(--blue);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.beverage {
+  min-height: 245px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(135deg, rgba(7, 103, 200, 0.08), transparent 50%),
+    var(--white);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.beverage:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 38px rgba(7, 29, 58, 0.09);
+}
+
+.beverage span {
+  color: var(--red);
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.beverage h3 {
+  margin: 16px 0 8px;
+  color: var(--navy);
+  font-size: 1.3rem;
+}
+
+.beverage strong {
+  color: var(--blue);
+}
+
+.beverage p {
+  color: var(--ink-soft);
+  line-height: 1.6;
+}
+
+@media (max-width: 1050px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
