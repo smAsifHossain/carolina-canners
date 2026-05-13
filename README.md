@@ -1,103 +1,51 @@
 # Carolina Canners Website
 
-A responsive React website for Carolina Canners, designed as a professional business-facing frontend project. The site presents beverage manufacturing, packaging, warehousing, careers, and contact information through a clean multi-page experience.
+A professional, responsive frontend website for Carolina Canners, a beverage manufacturing and bottling company based in Cheraw, South Carolina. The project presents the company’s production capabilities, beverage categories, operational strengths, careers information, and contact pathway through a polished multi-page React experience.
 
-## Live Site
+## Live Project
 
-GitHub Pages URL:
+[View the deployed website](https://smasifhossain.github.io/carolina-canners/)
 
-```text
-https://smasifhossain.github.io/carolina-canners/
-```
+## Project Highlights
 
-## Features
+- Built a multi-page React interface for a business-facing manufacturing website
+- Designed responsive layouts for mobile, tablet, and desktop experiences
+- Used CSS Modules for scoped, maintainable styling
+- Added CSS-based hero animations, page transitions, and scroll reveal effects
+- Implemented dynamic UI sections including beverage filtering, capability tabs, and a careers accordion
+- Created a validated contact form with controlled React state and success feedback
+- Used semantic HTML, accessible form labels, visible focus states, and reduced-motion support
+- Configured automated deployment through GitHub Actions and GitHub Pages
 
-- Multi-page React application with GitHub Pages-compatible routing
-- Responsive layout for mobile, tablet, and desktop screens
-- Professional manufacturing-focused visual design
-- Animated hero sections and scroll reveal effects
-- Beverage category filtering
-- Capabilities tabs for production, packaging, logistics, and quality
-- Careers accordion for benefit information
-- Contact form with client-side validation and success state
-- Accessible navigation, form labels, focus states, and reduced-motion support
+## Core Pages
 
-## Tech Stack
+- **Home**: company positioning, production highlights, operational metrics
+- **About**: cooperative background, manufacturing story, timeline
+- **Beverages**: filterable beverage category grid
+- **Capabilities**: interactive tabs for packaging, production, logistics, and quality
+- **Careers**: benefit-focused accordion section
+- **Contact**: validated inquiry form and location details
 
+## Technology
+
+- React
+- JavaScript
 - HTML
 - CSS Modules
-- JavaScript
-- React
 - Vite
 - React Router
+- GitHub Actions
 - GitHub Pages
-
-## Pages
-
-- Home
-- About
-- Beverages
-- Capabilities
-- Careers
-- Contact
-
-## Getting Started
-
-Clone the repository:
-
-```bash
-git clone https://github.com/smAsifHossain/carolina-canners.git
-cd carolina-canners
-```
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-Run the development server:
-
-```bash
-npm run dev
-```
-
-Build for production:
-
-```bash
-npm run build
-```
-
-Preview the production build:
-
-```bash
-npm run preview
-```
 
 ## Deployment
 
-This project is configured for GitHub Pages using `HashRouter` and GitHub Actions.
-
-Every push to the `main` branch runs the deployment workflow:
+The site is deployed with GitHub Pages using a custom GitHub Actions workflow:
 
 ```text
 .github/workflows/deploy.yml
 ```
 
-The workflow installs dependencies, builds the Vite app, uploads the `dist` folder, and publishes it to GitHub Pages.
-
-To verify the production build locally:
-
-```bash
-npm run build
-```
-
-Enable GitHub Pages in the repository settings:
-
-1. Go to **Settings**.
-2. Open **Pages**.
-3. Under **Build and deployment**, set **Source** to **GitHub Actions**.
-4. Save.
+Each push to the `main` branch builds the Vite application and publishes the production output from `dist`.
 
 ## Developer
 
